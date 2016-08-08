@@ -1,0 +1,40 @@
+[0m[[0minfo[0m] [0mRunning kmeans.fun.ScalaShop [0m
+[0m[[0mdebug[0m] [0mWaiting for threads to exit or System.exit to be called.[0m
+[0m[[0mdebug[0m] [0m  Classpath:[0m
+[0m[[0mdebug[0m] [0m	/Users/heytitle/projects/scala-coursera/kmeans/target/scala-2.11/classes[0m
+[0m[[0mdebug[0m] [0m	/Users/heytitle/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/heytitle/.ivy2/cache/org.scalatest/scalatest_2.11/bundles/scalatest_2.11-2.2.4.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/heytitle/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.2.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/heytitle/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.2.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/heytitle/.ivy2/cache/com.storm-enroute/scalameter-core_2.11/jars/scalameter-core_2.11-0.6.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/heytitle/.ivy2/cache/org.apache.commons/commons-math3/jars/commons-math3-3.2.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/heytitle/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/heytitle/.ivy2/cache/com.github.scala-blitz/scala-blitz_2.11/jars/scala-blitz_2.11-1.1.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/heytitle/.ivy2/cache/org.scala-lang.modules/scala-swing_2.11/bundles/scala-swing_2.11-1.0.1.jar[0m
+[0m[[0mdebug[0m] [0mWaiting for thread run-main-1 to terminate.[0m
+[0m[[0mdebug[0m] [0m	Thread run-main-1 exited.[0m
+[0m[[0mdebug[0m] [0mWaiting for thread AWT-EventQueue-0 to terminate.[0m
+[0m[[31merror[0m] [0m(AWT-EventQueue-0) java.util.NoSuchElementException: key not found: (0.1, 0.12, 0.11)[0m
+java.util.NoSuchElementException: key not found: (0.1, 0.12, 0.11)
+	at scala.collection.MapLike$class.default(MapLike.scala:228)
+	at scala.collection.AbstractMap.default(Map.scala:59)
+	at scala.collection.MapLike$class.apply(MapLike.scala:141)
+	at scala.collection.AbstractMap.apply(Map.scala:59)
+	at kmeans.KMeans$$anonfun$update$1.apply(KMeans.scala:75)
+	at kmeans.KMeans$$anonfun$update$1.apply(KMeans.scala:74)
+	at scala.collection.parallel.AugmentedIterableIterator$class.map2combiner(RemainsIterator.scala:115)
+	at scala.collection.parallel.immutable.ParVector$ParVectorIterator.map2combiner(ParVector.scala:62)
+	at scala.collection.parallel.ParIterableLike$Map.leaf(ParIterableLike.scala:1054)
+	at scala.collection.parallel.Task$$anonfun$tryLeaf$1.apply$mcV$sp(Tasks.scala:49)
+	at scala.collection.parallel.Task$$anonfun$tryLeaf$1.apply(Tasks.scala:48)
+	at scala.collection.parallel.Task$$anonfun$tryLeaf$1.apply(Tasks.scala:48)
+	at scala.collection.parallel.Task$class.tryLeaf(Tasks.scala:51)
+	at scala.collection.parallel.ParIterableLike$Map.tryLeaf(ParIterableLike.scala:1051)
+	at scala.collection.parallel.AdaptiveWorkStealingTasks$WrappedTask$class.compute(Tasks.scala:152)
+	at scala.collection.parallel.AdaptiveWorkStealingForkJoinTasks$WrappedTask.compute(Tasks.scala:443)
+	at scala.concurrent.forkjoin.RecursiveAction.exec(RecursiveAction.java:160)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+[0m[[31merror[0m] [0m(AWT-EventQueue-0) java.util.NoSuchElementException: key not found: (0.1, 0.12, 0.11)[0m

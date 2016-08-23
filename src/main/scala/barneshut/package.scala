@@ -1,4 +1,4 @@
-import common._
+import taskSchedule._
 import barneshut.conctrees._
 
 package object barneshut {

@@ -8,9 +8,6 @@ scalacOptions ++= Seq("-deprecation")
 libraryDependencies += "junit" % "junit" % "4.10" % "test"
 libraryDependencies ++= assignmentsMap.value.values.flatMap(_.dependencies).toSeq
 
-// include the common dir
-commonSourcePackages += "common"
-
 courseId := "PeZYFz-zEeWB_AoW1KYI4Q"
 
 val depsQuickcheck = Seq("org.scalacheck" %% "scalacheck" % "1.12.1")
